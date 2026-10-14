@@ -1,0 +1,15 @@
+# Omarchy Scrum 2.0 — Seat-to-Model Lock (Single Source of Truth)
+# Format: SEAT_ID|GROUP|RUNTIME|FAMILY|DEFAULT_MODEL|WEIGHT
+# Edit model versions ONLY here after a 1-task A/B cook-off.
+schema=2
+
+linus|grand_council|cloud|anthropic_opus|claude-opus-5-5-high|Chief Architect (G3), system boundaries, diff size
+dhh|grand_council|cloud|muse_spark|muse-spark-1.3-high|Product, UI & Jobs-level visual taste (G4-UI)
+carmack|grand_council|cloud|xai_grok|grok-4.7-high|Performance, engine math & ABI honesty (G4-Perf)
+knuth|grand_council|cloud|openai_gpt|gpt-5.6-sol-high|Algorithmic rigor, invariants & developer onboarding
+qweny|local_council|local|local_family_a|qwen3.8:27b-mlx|Primary local builder (code + unit tests)
+moxie|local_council|local|local_family_b|gemma4:31b-mlx|Standing G5 peer reviewer, privacy & trust boundaries
+mitnick|local_council|local|local_family_b|gemma4:31b-mlx|Adversarial QA, fail-closed tests & Testing Jig (G4-Test)
+jobs|local_council|local|local_family_a|qwen3.8:27b-mlx|Sighted UX taste & friction auditor (Non-G5)
+scrum|local_council|local|local_family_a|qwen3.8:27b-mlx|Empirical Scrum Master, DoD & Sprint Dashboard auditor (Non-G5)
+parent|orchestrator|host|orchestrator|host_session|Deterministic router, packet compiler & mechanical gatekeeper

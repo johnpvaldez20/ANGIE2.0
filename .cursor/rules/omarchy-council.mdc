@@ -1,0 +1,13 @@
+---
+description: Omarchy Scrum 2.0 — Two-hemisphere multi-agent routing, cross-family G5 peer checks, and anti-hallucination laws.
+alwaysApply: true
+---
+
+# Omarchy Scrum 2.0 Council Rule
+
+1. **Read First:** [`00_ARCHITECTURE.md`](00_ARCHITECTURE.md) (system contracts), [`01_OMARCHY_AGENT_PROMPTS.md`](01_OMARCHY_AGENT_PROMPTS.md) (the 12 Iron Laws & Gates `G0–G5`), [`AGENTS.md`](AGENTS.md) + [`agents.lock`](agents.lock) (canonical seat bindings), and [`docs/SPRINT_DASHBOARD.md`](docs/SPRINT_DASHBOARD.md) (active sprint checkpoint).
+2. **Hemisphere Separation:**
+   - **Cloud Grand Council (`linus`, `dhh`, `carmack`, `knuth`):** Planning, `PRODUCT_SPEC.md`, `00_ARCHITECTURE.md`, Rule 11 task packets, and `G3`/`G4` reviews only. **Never** write production code, tests, or build scripts in cloud Tasks.
+   - **Local Council (`qweny`, `moxie`, `mitnick`, `jobs`, `scrum`):** All code, unit tests, `G5` peer reviews, UX briefs, and Scrum dashboard audits via `scripts/ensure_local_agents.sh` + `scripts/run_local_agent.sh <seat>`.
+3. **Cross-Family Double-Check (`G5`):** Local Family A (`qweny`) and Local Family B (`moxie`/`mitnick`) must stay on different model families (`qwen3.8:27b-mlx` vs `gemma4:31b-mlx`). Author family never reviews its own weights.
+4. **Honesty & Testing Jig:** Every slice must pass the automated Testing Jig (`G1`) and keep unverified hardware/integration metrics marked `UNMEASURED`.

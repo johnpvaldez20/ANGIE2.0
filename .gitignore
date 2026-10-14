@@ -1,0 +1,5 @@
+.angie/model-cache/
+.DS_Store
+build/
+.gradle/
+local.properties
